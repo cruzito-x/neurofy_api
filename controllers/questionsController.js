@@ -10,7 +10,7 @@ exports.getQuestion = (request, response) => {
       response.status(500).json({
         status: 500,
         icon: "error",
-        message: "Error al iniciar sesión. Error de servidor.",
+        message: "Error al obtener las preguntas. Error de servidor.",
       });
 
       return;
