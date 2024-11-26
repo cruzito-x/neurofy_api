@@ -16,8 +16,6 @@ exports.getQuestion = (request, response) => {
       return;
     }
 
-    console.log(`La pregunta obtenida es: ${result[0].question}`);
-
     if (result.length > 0) {
       response.status(200).json({
         status: 200,
